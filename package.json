@@ -1,0 +1,21 @@
+{
+  "name": "squla-default-amd-export",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "constantine@squla.com",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/types": "^7.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "prettier": "^2.2.1",
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7"
+  }
+}
