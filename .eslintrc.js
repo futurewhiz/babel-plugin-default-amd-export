@@ -3,13 +3,14 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: "eslint:recommended",
+  extends: ['eslint:recommended', 'prettier'],
   parserOptions: {
-    sourceType: "module"
+    sourceType: 'module',
+    ecmaVersion: 2021,
   },
   rules: {
-    indent: ["error", 2],
-    quotes: ["error", "single"],
-    semi: ["error", "always"]
-  }
+    indent: ['error', 2],
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
+  },
 };
