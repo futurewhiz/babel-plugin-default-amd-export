@@ -1,6 +1,6 @@
 {
-  "name": "squla-default-amd-export",
-  "version": "0.0.2",
+  "name": "babel-plugin-default-amd-export",
+  "version": "0.0.3",
   "description": "",
   "main": "lib/index.js",
   "scripts": {
