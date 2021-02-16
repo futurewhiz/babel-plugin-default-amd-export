@@ -1,7 +1,6 @@
 {
   "name": "babel-plugin-default-amd-export",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.4",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest"

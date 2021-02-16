@@ -22,7 +22,7 @@ At the moment only Object and Function exports supported. Runtime expressions de
 For Object it is:
 
 ```javascript
-if (_default.constructor.name === 'Object') {
+if (typeof _default === 'object' && _default) {
   _exports = Object.assign(_exports, _default);
 }
 ```
@@ -30,7 +30,7 @@ if (_default.constructor.name === 'Object') {
 For Function:
 
 ```javascript
-if (_default.constructor.name === 'Function') {
+if (typeof _default === 'function') {
   return _default;
 }
 ```
@@ -38,7 +38,7 @@ if (_default.constructor.name === 'Function') {
 Plugin supports "addConsoleWarn" config option to generate logging statement for unsupported export types:
 
 ```javascript
-  if (['Function', 'Object'].indexOf(_default.constructor.name) === -1) {
+  if (['function', 'object'].indexOf(typeof _default) === -1) {
     console.warn('Unrecognised export type, the module might not work in AMD environment:', _default);
   }
 ```

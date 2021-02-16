@@ -11,11 +11,11 @@ define(['exports'], function (_exports) {
   var _default = Keyboard;
   _exports.default = _default;
 
-  if (_default.constructor.name === 'Object') {
+  if (typeof _default === 'object' && _default) {
     _exports = Object.assign(_exports, _default);
   }
 
-  if (_default.constructor.name === 'Function') {
+  if (typeof _default === 'function') {
     return _default;
   }
 });

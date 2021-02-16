@@ -11,15 +11,15 @@ define(['exports'], function (_exports) {
   var _default = Keyboard;
   _exports.default = _default;
 
-  if (_default.constructor.name === 'Object') {
+  if (typeof _default === 'object' && _default) {
     _exports = Object.assign(_exports, _default);
   }
 
-  if (_default.constructor.name === 'Function') {
+  if (typeof _default === 'function') {
     return _default;
   }
 
-  if (['Function', 'Object'].indexOf(_default.constructor.name) === -1) {
+  if (['function', 'object'].indexOf(typeof _default) === -1) {
     console.warn('Unrecognised export type, the module might not work in AMD environment:', _default);
   }
 });
