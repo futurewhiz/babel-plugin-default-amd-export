@@ -9,14 +9,11 @@ define(['exports'], function (_exports) {
     foo: 'foo',
     bar: 'bar',
   };
-  var _default = obj;
-  _exports.default = _default;
-
-  if (typeof _default === 'object' && _default) {
-    _exports = Object.assign(_exports, _default);
+  var _default = (_exports.default = obj);
+  if (typeof _exports.default === 'object' && _exports.default) {
+    _exports = Object.assign(_exports, _exports.default);
   }
-
-  if (typeof _default === 'function') {
-    return _default;
+  if (typeof _exports.default === 'function') {
+    return _exports.default;
   }
 });

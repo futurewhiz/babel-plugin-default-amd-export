@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-default-amd-export",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "scripts": {
     "test": "jest"
@@ -8,14 +8,16 @@
   "author": "constantine@squla.com",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.12.8",
-    "@babel/core": "^7.12.9",
-    "@babel/plugin-transform-modules-amd": "^7.12.1",
-    "@babel/preset-env": "^7.12.7",
-    "babel-plugin-tester": "^10.0.0",
+    "babel-plugin-tester": "^11.0.4",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^6.15.0",
-    "jest": "^26.6.3",
+    "jest": "^29.7.0",
     "prettier": "^2.2.1"
+  },
+  "peerDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-modules-amd": "^7.25.9",
+    "@babel/preset-env": "^7.26.0"
   }
 }
