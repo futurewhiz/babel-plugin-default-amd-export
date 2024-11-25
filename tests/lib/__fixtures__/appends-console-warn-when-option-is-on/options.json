@@ -1,3 +1,5 @@
 {
-  "addConsoleWarn": true
+  "pluginOptions": {
+    "addConsoleWarn": true
+  }
 }
